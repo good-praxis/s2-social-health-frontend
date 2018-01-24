@@ -1,0 +1,19 @@
+{
+  "name": "s2-social-health-frontend",
+  "version": "0.1.0",
+  "description": "tbd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeuniversity/s2-social-health-frontend.git"
+  },
+  "author": "CODE University",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/codeuniversity/s2-social-health-frontend/issues"
+  },
+  "homepage": "https://github.com/codeuniversity/s2-social-health-frontend#readme"
+}
