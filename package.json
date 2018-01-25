@@ -4,7 +4,8 @@
   "description": "tbd",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/.bin/webpack",
+    "start": "./node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,13 @@
     "react": "^16.2.0"
   },
   "devDependencies": {
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.11.1"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   }
 }
