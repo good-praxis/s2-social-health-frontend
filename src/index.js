@@ -1,9 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
+import HelloWorld from './components/HelloWorld'
 
 window.React = React
 
 render (
-    <h1>Hello World!</h1>,
+    <HelloWorld/>,
     document.getElementById('react-container')
 )
