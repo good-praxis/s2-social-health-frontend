@@ -6,6 +6,7 @@ export default class HelloWorld extends React.Component {
             <div>
                 <h1>I Like Your Mom</h1>
                 <p>I also like penguins.</p>
+                <p>In fact, we all do!</p>
             </div>
         )
     } 
