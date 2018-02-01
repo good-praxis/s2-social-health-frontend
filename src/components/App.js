@@ -1,3 +1,3 @@
 export default App = () => {
-    render(<h1>Hello Wor</h1>)
+    render(<h1></h1>)
 }
