@@ -1,3 +1,8 @@
-export default App = () => {
-    render(<h1></h1>)
-}
+import React from 'react'
+import Construction from "./Construction"
+
+const App = () => (
+    <Construction/>
+)
+
+export default App

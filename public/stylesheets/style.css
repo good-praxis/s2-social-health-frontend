@@ -1,0 +1,14 @@
+.construction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#construction-image {
+	width: 100px;
+    height: 100px;
+}
+
+.center-block {
+	text-align: center;
+}
