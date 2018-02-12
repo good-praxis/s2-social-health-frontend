@@ -26,9 +26,9 @@
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
-    "css-loader": "^0.28.9",
     "react-dom": "^16.2.0",
     "webpack": "^1.13.3",
+    "webpack-css-loaders": "^1.0.0",
     "webpack-dev-server": "^1.16.2"
   }
 }
