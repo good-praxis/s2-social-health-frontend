@@ -1,10 +1,21 @@
 import React from 'react'
-import { render } from 'react-dom'
+import ReactDOM from 'react-dom'
 import App from "./components/App";
+
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+
+import registerServiceWorker from './registerServiceWorker'
+import chat from './reducers'
+
+const store = createStore(chat)
 
 window.React = React
 
-render (
-    <App/>,
-    document.getElementById('react-container')
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
 )
+registerServiceWorker()
