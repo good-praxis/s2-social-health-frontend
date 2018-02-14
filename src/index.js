@@ -8,12 +8,12 @@ import { createStore } from 'redux'
 import registerServiceWorker from './registerServiceWorker'
 import chat from './reducers'
 
-const store = createStore(chat)
-
 window.React = React
 
+const store = createStore(chat)
+
 ReactDOM.render(
-    <Provider store={store}>
+    <Provider store={createStore(chat)}>
         <App />
     </Provider>,
     document.getElementById('react-container')
