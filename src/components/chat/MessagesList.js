@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import propTypes from 'prop-types'
 import Message from './Message'
 
 const MessagesList = ({ messages }) => (
@@ -15,12 +15,12 @@ const MessagesList = ({ messages }) => (
     </section>
 )
 
-MessagesList.PropTypes = {
-    message: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.number.isRequired,
-            message: PropTypes.string.isRequired,
-            author: PropTypes.string.isRequired
+MessagesList.propTypes = {
+    message: propTypes.arrayOf(
+        propTypes.shape({
+            id: propTypes.number.isRequired,
+            message: propTypes.string.isRequired,
+            author: propTypes.string.isRequired
         }).isRequired
     ).isRequired
 }

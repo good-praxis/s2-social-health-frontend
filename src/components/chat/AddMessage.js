@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import propTypes from 'prop-types'
 
 const AddMessage = (props) => {
     let input
@@ -22,8 +22,8 @@ const AddMessage = (props) => {
      )
 
 }
-AddMessage.PropTypes = {
-    dispatch: PropTypes.func.isRequired
+AddMessage.propTypes = {
+    dispatch: propTypes.func.isRequired
 }
 
 export default AddMessage
