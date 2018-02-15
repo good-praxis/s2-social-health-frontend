@@ -10,21 +10,21 @@ const setupSocket = (dispatch, username) => {
             name: username
         }))
     }
-    
-socket.onmessage = (event) => {
-    const data = JSON.parse(event.data)
-    switch (data.type) {
-        case types.ADD_MESSAGE:
-            dispatch(messageReceived(data.message, data.author))
-            break
-        case types.ADD_USER:
-            dispatch(addUser(data.name))
-            break
-        case types.USERS_LIST:
-            dispatch(populateUsersList(data.users))
-            break
-        default:
-            break
+
+    socket.onmessage = (event) => {
+        const data = JSON.parse(event.data)
+        switch (data.type) {
+            case types.ADD_MESSAGE:
+                dispatch(messageReceived(data.message, data.author))
+                break
+            case types.ADD_USER:
+                dispatch(addUser(data.name))
+                break
+            case types.USERS_LIST:
+                dispatch(populateUsersList(data.users))
+                break
+            default:
+                break
     }
  }
 
