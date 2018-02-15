@@ -9,6 +9,9 @@ import registerServiceWorker from './registerServiceWorker'
 import chat from './reducers'
 import { addUser } from './actions'
 import { setupSocket } from './sockets'
+import handleNewMessage from './sagas'
+import username from './utils/name'
+
 
 
 const store = createStore(chat)
