@@ -7,11 +7,11 @@ import createSagaMiddleware from 'redux-saga'
 import App from "./components/App";
 import registerServiceWorker from './registerServiceWorker'
 import reducers from './reducers'
-import { setupSocket } from './sockets'
+import setupSocket from './sockets'
 import handleNewMessage from './sagas'
 import username from './utils/name'
 
-const SagaMiddleware = createSagaMiddleware()
+const sagaMiddleware = createSagaMiddleware()
 
 const store = createStore(
     reducers,
