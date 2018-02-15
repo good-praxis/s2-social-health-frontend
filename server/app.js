@@ -37,8 +37,15 @@ wss.on('connection', (ws) => {
                     author: data.author
                 }, ws)
                 break
-                default:
+            default:
                 break
         }
     })
-}
+    ws.on('close', () => {
+        users.splice(index, 1)
+        broadcast({
+            type: 'USERS_LIST',
+            users
+        }, ws)
+    })
+})
