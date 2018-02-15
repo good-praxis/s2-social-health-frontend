@@ -22,7 +22,7 @@ MessagesList.propTypes = {
             message: propTypes.string.isRequired,
             author: propTypes.string.isRequired
         }).isRequired
-    ).isRequired
+    )
 }
 
 export default MessagesList
