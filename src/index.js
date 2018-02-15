@@ -14,7 +14,7 @@ const store = createStore(chat)
 store.dispatch(addUser('Me'))
 
 ReactDOM.render(
-    <Provider store={createStore(chat)}>
+    <Provider store={store}>
         <App />
     </Provider>,
     document.getElementById('react-container')
