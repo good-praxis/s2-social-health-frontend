@@ -20,7 +20,8 @@ MessagesList.propTypes = {
         propTypes.shape({
             id: propTypes.number.isRequired,
             message: propTypes.string.isRequired,
-            author: propTypes.string.isRequired
+            author: propTypes.string.isRequired,
+            timestamp: propTypes.string.isRequired
         }).isRequired
     )
 }
