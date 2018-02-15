@@ -20,7 +20,8 @@
   "dependencies": {
     "chance": "^1.0.13",
     "react": "^16.2.0",
-    "redux-saga": "^0.16.0"
+    "redux-saga": "^0.16.0",
+    "ws": "^4.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
