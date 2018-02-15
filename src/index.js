@@ -21,6 +21,8 @@ const store = createStore(
 
 const socket = setupSocket(store.dispatch, username)
 
+SagaMiddleware.run(handleNewMessage, { socket, username })
+
 ReactDOM.render(
     <Provider store={store}>
         <App />
