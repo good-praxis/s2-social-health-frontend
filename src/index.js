@@ -7,8 +7,7 @@ import { createStore } from 'redux'
 
 import registerServiceWorker from './registerServiceWorker'
 import chat from './reducers'
-
-window.React = React
+import { addUser } from './actions'
 
 const store = createStore(chat)
 
