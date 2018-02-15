@@ -37,6 +37,7 @@ wss.on('connection', (ws) => {
                     author: data.author
                 }, ws)
                 break
+<<<<<<< HEAD
             default:
                 break
         }
@@ -49,3 +50,10 @@ wss.on('connection', (ws) => {
         }, ws)
     })
 })
+=======
+                default:
+                break
+        }
+    })
+}
+>>>>>>> functional-dev
