@@ -8,6 +8,7 @@ export const addMessage = (message, author) => ({
     id: nextMessageId++,
     message,
     author,
+    date: new Date().toLocaleDateString(),
     timestamp: new Date().toLocaleTimeString()
 })
 
@@ -22,6 +23,7 @@ export const messageReceived = (message, author) => ({
     id: nextMessageId++,
     message,
     author,
+    date: new Date().toLocaleDateString(),
     timestamp: new Date().toLocaleTimeString()
 })
 

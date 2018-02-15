@@ -21,7 +21,8 @@ MessagesList.propTypes = {
             id: propTypes.number.isRequired,
             message: propTypes.string.isRequired,
             author: propTypes.string.isRequired,
-            timestamp: propTypes.string.isRequired
+            timestamp: propTypes.string.isRequired,
+            date: propTypes.string.isRequired
         }).isRequired
     )
 }
