@@ -9,6 +9,7 @@ const messages = (state = [], action) => {
                     message: action.message,
                     author: action.author,
                     id: action.id,
+                    date: action.date,
                     timestamp: action.timestamp
                 }
             ])
