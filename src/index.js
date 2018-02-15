@@ -8,6 +8,7 @@ import { createStore } from 'redux'
 import registerServiceWorker from './registerServiceWorker'
 import chat from './reducers'
 import { addUser } from './actions'
+import { setupSocket } from './sockets'
 
 const store = createStore(chat)
 
