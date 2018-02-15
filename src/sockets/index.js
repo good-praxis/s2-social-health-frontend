@@ -25,10 +25,10 @@ const setupSocket = (dispatch, username) => {
                 break
             default:
                 break
+         }
     }
- }
 
-return socket
+    return socket
 }
 
 export default setupSocket
