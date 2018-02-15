@@ -12,7 +12,7 @@ import { setupSocket } from './sockets'
 import handleNewMessage from './sagas'
 import username from './utils/name'
 
-
+const SagaMiddleware = createSagaMiddleware()
 
 const store = createStore(chat)
 
