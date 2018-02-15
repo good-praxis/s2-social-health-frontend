@@ -7,3 +7,5 @@ const handleNewMessage = function* handleNewMessage(params) {
         params.socket.send(JSON.stringify(action))
     })
 }
+
+export default handleNewMessage
