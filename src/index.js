@@ -6,7 +6,7 @@ import createSagaMiddleware from 'redux-saga'
 
 import App from "./components/App";
 import registerServiceWorker from './registerServiceWorker'
-import chat from './reducers'
+import reducers from './reducers'
 import { addUser } from './actions'
 import { setupSocket } from './sockets'
 import handleNewMessage from './sagas'
@@ -14,7 +14,10 @@ import username from './utils/name'
 
 const SagaMiddleware = createSagaMiddleware()
 
-const store = createStore(chat)
+const store = createStore(
+    reducers,
+    applyMiddleware(SagaMiddleware)
+)
 
 store.dispatch(addUser('Me'))
 
