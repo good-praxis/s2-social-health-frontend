@@ -19,7 +19,7 @@ const store = createStore(
     applyMiddleware(SagaMiddleware)
 )
 
-store.dispatch(addUser('Me'))
+const socket = setupSocket(store.dispatch, username)
 
 ReactDOM.render(
     <Provider store={store}>
