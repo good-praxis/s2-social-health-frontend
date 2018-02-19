@@ -15,17 +15,17 @@ const sagaMiddleware = createSagaMiddleware()
 
 const store = createStore(
     reducers,
-    applyMiddleware(SagaMiddleware)
+    applyMiddleware(sagaMiddleware)
 )
 
 const socket = setupSocket(store.dispatch, username)
 
-SagaMiddleware.run(handleNewMessage, { socket, username })
+sagaMiddleware.run(handleNewMessage, { socket, username })
 
 ReactDOM.render(
     <Provider store={store}>
         <App />
     </Provider>,
-    document.getElementById('root')
+    document.getElementById('react-container')
 )
 registerServiceWorker()
