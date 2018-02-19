@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/codeuniversity/s2-social-health-frontend#readme",
   "dependencies": {
-    "react": "^16.2.0"
+    "chance": "^1.0.13",
+    "react": "^16.2.0",
+    "redux-saga": "^0.16.0",
+    "ws": "^4.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -26,8 +29,12 @@
     "babel-preset-latest": "^6.16.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
+    "babel-polyfill": "^6.0.16",
     "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
     "webpack": "^1.13.3",
+    "webpack-css-loaders": "^1.0.0",
     "webpack-dev-server": "^1.16.2"
   }
 }
