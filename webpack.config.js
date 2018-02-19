@@ -7,8 +7,8 @@ module.exports = {
     devServer: {
         inline: true,
         contentBase: './public',
-        port: 80,
-        host: "207.154.223.56"
+        port: 3000,
+        host: "localhost"
 
     },
     module: {
