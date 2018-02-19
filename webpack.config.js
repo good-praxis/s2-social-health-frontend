@@ -1,5 +1,5 @@
 module.exports = {
-    entry: "./src/index.js",
+    entry: ["babel-polyfill", "./src/index.js"],
     output: {
         path: "public",
         filename: "bundle.js",
@@ -12,7 +12,7 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
                 loader: ['babel'],
                 query: {
