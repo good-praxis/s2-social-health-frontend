@@ -27,7 +27,7 @@ body {
   background-color: white;
 }
 #messages-list {
-  padding: 5px 0 40px 5px;
+  padding: 5px 0 35px 5px;
 }
 #sidebar {
   grid-area: sidebar;
