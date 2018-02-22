@@ -23,6 +23,8 @@ body {
   padding: 5px;
   margin-left: 0px;
   border-top: 1px solid #3f3f3f;
+  z-index: 1;
+  background-color: white;
 }
 #messages-list {
   padding: 5px 0 0 5px;
