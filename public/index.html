@@ -10,12 +10,59 @@
     <link rel="icon" href="images/donutt.png" type="image/png"> 
     <style>
         body {
-            background-color: rgb(241, 241, 241)
+            background-color: rgb(241, 241, 241);
+            margin: 0;
+        }
+            
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(187, 187, 187);
+        }
+            
+        ul.topnav li {float: left;}
+            
+        ul.topnav li a {
+            display: block;
+            color: rgb(32, 32, 32);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+            
+        ul.topnav li a:hover:not(.active) {background-color: rgba(193, 243, 235, 0.918);}
+            
+        ul.topnav li a.active {background-color: rgb(198, 236, 227);}
+            
+        ul.topnav li.right {float: right;}
+            
+        @media screen and (max-width: 600px){
+            ul.topnav li.right, 
+            ul.topnav li {float: none;}
         }
     </style>            
 </head>
 
 <body>
+    <ul class="topnav">
+        <li>
+            <a class="active" href="#home">
+                <span class="span-logo">
+                    <img src="images/logo.png" height="32" />
+                        </span> the real social network
+            </a>
+        </li>
+        <li class="right">
+            <a href="#logout">
+                <span>
+                    <button>Log Out</button>
+                </span>
+            </a>
+        </li>
+    </ul>
+
 <div id="react-container">
     <section id ="new-message">
 
