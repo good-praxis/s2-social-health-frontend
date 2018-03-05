@@ -1,2 +1,6 @@
 # s2-social-health-frontend
-tbd
+
+## How to start
+npm install
+npm start &
+node server/app.js &
