@@ -22,22 +22,15 @@ class MessagesList extends Component {
         )
     }
     componentWillUpdate(nextProps, nextState) {
-        console.log("LOOK AT THIS FUCKING SHIT: ", document.body.scrollHeight, document.body.clientHeight)
         this.setState({scrollPos: document.body.scrollHeight - document.body.clientHeight})
-        console.log("I HAZ UPDATE")
     }
     shouldComponentUpdate(nextProps, nextState) {
-        console.log(this.props.messages !== nextProps.messages)
         return this.props.messages !== nextProps.messages
 
     }
 
     componentDidUpdate(prevProps, prevState){
-        console.log("LOL")
-        console.log(document.documentElement.scrollTop)
-        console.log(this.state.scrollPos)
         if(document.documentElement.scrollTop >= this.state.scrollPos) {
-            console.log("ROFL")
             window.scrollTo(0, document.body.scrollHeight)
         }
 
