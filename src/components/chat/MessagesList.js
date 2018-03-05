@@ -33,6 +33,19 @@ class MessagesList extends Component {
         if(document.documentElement.scrollTop >= this.state.scrollPos) {
             window.scrollTo(0, document.body.scrollHeight)
         }
+        fetch("http://localhost:3000/ranks", {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "rank_id": "1",
+                "rank_type": false,
+                "rank_name": "Advanced",
+                "rank_description": "Tes"
+            })
+        })
 
     }
 }
