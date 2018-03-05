@@ -2,14 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="robots" content="noindex,nofollow">
+    <meta name="avatar" content="noindex,nofollow">
     <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" media="screen,projection" />
-    <title>Under Construction</title>
+    <title>unomni</title>
+    <link rel="icon" href="images/donutt.png" type="image/png"> 
+    <style>
+        body {
+            background-color: rgb(241, 241, 241);
+            margin: 0;
+        }
+            
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(187, 187, 187);
+            position: fixed;
+        }
+            
+        ul.topnav li {float: left;}
+            
+        ul.topnav li a {
+            display: block;
+            color: rgb(198, 236, 227);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+            
+        ul.topnav li a:hover:not(.active) {background-color: rgba(193, 243, 235, 0.918);}
+            
+        ul.topnav li a.active {background-color: rgb(198, 236, 227);}
+            
+        ul.topnav li.right {float: right;}
+            
+        @media screen and (max-width: 600px){
+            ul.topnav li.right, 
+            ul.topnav li {float: none;}
+        }
+    </style>            
 </head>
+
 <body>
-<div id="react-container"></div>
+    <ul class="topnav">
+        <li>
+            <a class="active" href="#home">
+                <span class="span-logo">
+                    <img src="images/logo.png" height="32" />
+                        </span> ..................................,
+            </a>
+        </li>
+        <li class="right">
+            <a href="#logout">
+                <span>
+                    <button onclick='console.log(fetch("http://localhost:3000/ranks", {
+  method: "POST",
+  headers: {
+      "Accept": "application/json",
+      "Content-Type": "application/json"
+    },
+  body: JSON.stringify({
+    "rank_id": "1",
+    "rank_type": false,
+    "rank_name": "Advanced",
+    "rank_description": "Tes"})
+}))'>Log Out</button>
+                </span>
+            </a>
+        </li>
+    </ul>
+
+<div id="react-container">
+    <section id ="new-message">
+
+    </section>
+</div>
 <script src="bundle.js"></script>
 </body>
 </html>
