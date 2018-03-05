@@ -36,7 +36,7 @@ class MessagesList extends Component {
         console.log("LOL")
         console.log(document.documentElement.scrollTop)
         console.log(this.state.scrollPos)
-        if(document.documentElement.scrollTop === this.state.scrollPos) {
+        if(document.documentElement.scrollTop >= this.state.scrollPos) {
             console.log("ROFL")
             window.scrollTo(0, document.body.scrollHeight)
         }
