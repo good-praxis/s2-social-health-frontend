@@ -35,6 +35,7 @@ class MessagesList extends Component {
         }
         fetch("http://localhost:3000/ranks", {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
