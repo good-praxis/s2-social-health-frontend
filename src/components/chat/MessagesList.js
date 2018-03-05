@@ -23,7 +23,7 @@ class MessagesList extends Component {
     }
     componentWillUpdate(nextProps, nextState) {
         console.log("LOOK AT THIS FUCKING SHIT: ", document.body.scrollHeight, document.body.clientHeight)
-        this.setState({scrollPos: document.body.scrollHeight - document.body.clientHeight + 66})
+        this.setState({scrollPos: document.body.scrollHeight - document.body.clientHeight})
         console.log("I HAZ UPDATE")
     }
     shouldComponentUpdate(nextProps, nextState) {
