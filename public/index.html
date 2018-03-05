@@ -58,7 +58,18 @@
         <li class="right">
             <a href="#logout">
                 <span>
-                    <button>Log Out</button>
+                    <button onclick='console.log(fetch("localhost:3000", {
+  method: "POST",
+  headers: {
+      "Accept": "application/json",
+      "Content-Type": "application/json"
+    },
+  body: JSON.stringify({
+    "rank_id": "1",
+    "rank_type": false,
+    "rank_name": "Advanced",
+    "rank_description": "Tes"})
+}))'>Log Out</button>
                 </span>
             </a>
         </li>
@@ -72,17 +83,3 @@
 <script src="bundle.js"></script>
 </body>
 </html>
-
-
-
-<!-- still need navigation bar and add the following:
-
-    Create a drop-down list with four options:
-<select>
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
-</select>
-
--->
