@@ -31,7 +31,7 @@ body {
 }
 #sidebar {
   grid-area: sidebar;
-  padding: 5px 0 80px 5px;
+  padding: 5px 0 80px 159px;
   border-right: 1px solid #3f3f3f;
   height: 100%;
     position: fixed;
@@ -53,4 +53,34 @@ button {
 
 .chip {
   font-style: italic;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(187, 187, 187);
+  position: fixed;
+}
+  
+ul.topnav li {float: left;}
+  
+ul.topnav li a {
+  display: block;
+  color: rgb(198, 236, 227);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+ul.topnav li a:hover:not(.active) {background-color: rgba(193, 243, 235, 0.918);}
+  
+ul.topnav li a.active {background-color: rgb(198, 236, 227);}
+  
+ul.topnav li.right {float: right;}
+  
+@media screen and (max-width: 600px){
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
 }
