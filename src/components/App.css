@@ -8,7 +8,7 @@ body {
 }
 #container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 0.6fr 3fr;
     grid-template-areas: "sidebar main";
     width: 100vw;
     height: 100vh;
@@ -16,11 +16,13 @@ body {
 #main {
     grid-area: main;
     background-color: rgb(255, 255, 245);
+    border-left: 1px solid #9e9e9e;
+    
 }
 #new-message {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   padding: 5px;
   margin-left: 0px;
   border-top: 1px solid #919191;
@@ -33,12 +35,12 @@ body {
 }
 #sidebar {
   grid-area: sidebar;
-  padding: 5px 10px 80px 15%;
-  margin-top: 11%;
-  border-right: 1px solid #9e9e9e;
+  margin-top: 5rem;
   height: 91%;
-  position: fixed;
-  background-color: rgb(206, 255, 196);
+  padding: 5px 10px 80px 15%;
+  border-top: 1px solid #9e9e9e;  
+  height: 91%;*/
+  background-color: rgb(197, 197, 197);
 }
 
 
