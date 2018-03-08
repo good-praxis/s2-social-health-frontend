@@ -35,16 +35,16 @@ class MessagesList extends Component {
         }
         fetch("http://localhost:3000/ranks", {
             method: 'POST',
-            mode: 'no-cors',
+            // mode: 'no-cors',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                "rank_id": "1",
-                "rank_type": false,
-                "rank_name": "Advanced",
-                "rank_description": "Tes"
+                rank_id: 1,
+                rank_type: false,
+                rank_name: "Advanced",
+                rank_description: "Tes"
             })
         })
 
