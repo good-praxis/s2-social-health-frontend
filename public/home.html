@@ -1,6 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>unomni</title>
+        <link rel="icon" href="images/donutt.png" type="image/png">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body {
+                background: rgb(255, 255, 255);
+                color: #FFA69E;
+                font-family: 'Montserrat', sans-serif;
+            }
+            h1,
+            h2 {
+                font-weight: bold;
+            }
+            p {
+                font-size: 16px;
+                color: #474747;
+            }
+            .navbar {
+                margin-bottom: 0;
+            }
+            .jumbotron1 h1 {
+                background: rgb(255, 255, 255);
+                color: rgb(100, 100, 100);
+                text-align: left;
+                font-size: 100px;
+                margin: 90px 50px 140px 90px;
+            }
 
+            .jumbotron {
+                background: rgb(236, 255, 249);
+                color: rgb(100, 100, 100);
+                text-align: center;
+            }
+            .jumbotron p {
+                color: rgb(110, 110, 110);
+                font-size: 26px;
+            }
+            .navbar-inverse {
+                background: rgb(255, 255, 255);
+                border: 0;
+            }
+            .dropdown-menu {
+                background: rgb(255, 255, 255);
+                border-radius: 0;
+                border: 0;
+            }
+            .navbar-inverse .navbar-nav li a {
+                color: rgb(75, 75, 75);
+                font-size: 16px;
+            }
+            .navbar-inverse .navbar-nav li a:hover {
+                background: rgb(198, 248, 232);
+            }
+            .navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+                background: rgb(234, 255, 247);
+            }
+            .dropdown-menu li a {
+                padding: 10px;
+            }
+            .btn-primary {
+                color: rgb(83, 83, 83);
+                background-color: transparent;
+                border-color: rgb(116, 116, 116);
+                margin-bottom: 5px;
+            }
+            .btn-primary:hover {
+                color: rgb(99, 182, 182);
+                background-color: rgb(75, 75, 75);
+                border-color: rgb(121, 121, 121);
+            }
+            .glyphicon-large {
+                font-size: 100px;
+            }
+            .call-to-action {
+                text-align: center;
+            }
+            .call-to-action p {
+                margin-bottom: 30px;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><span aria-hidden="true"><img src="images/logo.png" height="22" /></span></a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">The Community</a></li>
+                  <li><a href="#">Development</a></li>
+                  <li><a href="#">Our Team</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron1">
+            <div class="container">
+              <h1 class="headline">We're in this together </h1>
+            </div>
+          </div>
+      
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="headline"></h1>
+          <p>This is unomni. <br> </p>
+          <p>A framework to connect you to a group of 6
+          individuals in an environment that inspires mutual
+          support and personal growth.</p>
+          <p>As an alternative to current social media
+          platforms, we set out to create a community that
+          brings people together in an intimate setting that
+          facilitates sharing so mutual trust can arise. </p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Let's go &raquo;</a> <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
+      
+      <section class="call-to-action">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <span class="glyphicon glyphicon-heart glyphicon-large" aria-hidden="true"></span>
+              <h3>Bond</h3>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            </div>
+            <div class="col-md-4">
+              <span class="glyphicon glyphicon-user glyphicon-large" aria-hidden="true"></span>
+              <h3>Reflect</h3>
+              <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
+            </div>
+            <div class="col-md-4">
+              <span class="glyphicon glyphicon-leaf glyphicon-large" aria-hidden="true"></span>
+              <h3>Explore</h3>
+              <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      </html>
+      
+
+
+<!--
 <head>
     <title>unomni</title>
     <link rel="icon" href="images/donutt.png" type="image/png">
@@ -90,3 +255,4 @@
 </body>
 
 </html>
+-->
