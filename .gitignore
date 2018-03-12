@@ -1,5 +1,8 @@
 
-\.DS_Store
-\.idea\*
-\node_modules\*
-\sockets\*
+
+
+node_modules
+.idea
+npm-debug.log
+.env
+.DS_Store
