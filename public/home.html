@@ -8,93 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css">    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        body {
-            background: rgb(255, 255, 255);
-            color: #FFA69E;
-            font-family: 'Montserrat', sans-serif;
-        }
-        h1,
-        h2 {
-            font-weight: bold;
-        }
-        p {
-            font-size: 16px;
-            color: #474747;
-        }
-        .navbar {
-            margin-bottom: 0;
-            position: fixed;
-            width: 100%;
-            box-shadow: 0 6px 20px 0 rgba(61, 85, 75, 0.055);
-        }
-        .jumbotron1 h1 {
-            background: rgb(255, 255, 255);
-            color: rgb(152, 230, 190);
-            text-align: left;
-            font-size: 100px;
-            margin: 180px 90px 190px 50px;
-        }
-        .jumbotron {
-            background: rgb(255, 236, 226);
-            color: rgb(100, 100, 100);
-            text-align: center;
-            margin: 0px 0px 70px 0px;
-        }
-        .jumbotron p {
-            color: rgb(110, 110, 110);
-            font-size: 26px;
-        }
-        .navbar-inverse {
-            background: rgb(255, 255, 255);
-            border: 0;
-        }
-        .dropdown-menu {
-            background: rgb(255, 255, 255);
-            border-radius: 0;
-            border: 0;
-        }
-        .navbar-inverse .navbar-nav li a {
-            color: rgb(75, 75, 75);
-            font-size: 16px;
-        }
-        .navbar-inverse .navbar-nav li a:hover {
-            background: rgb(198, 248, 232);
-        }
-        .navbar-inverse .navbar-nav .dropdown-menu li a:hover {
-            background: rgb(230, 247, 0);
-        }
-        .dropdown-menu li a {
-            padding: 10px;
-        }
-        .btn-primary {
-            color: rgb(83, 83, 83);
-            background-color: transparent;
-            border-color: rgb(116, 116, 116);
-            margin-bottom: 5px;
-        }
-        .btn-primary:hover {
-            color: rgb(255, 162, 86);
-            background-color: rgb(255, 255, 255);
-            border-color: rgb(121, 121, 121);
-        }
-        .glyphicon-large {
-            font-size: 100px;
-        }
-        .glyphicon-arrow-down {
-            margin-left: 49%;
-            font-size: 60px;
-            margin-bottom: 20px;
-        }
-        .call-to-action {
-            text-align: center;
-        }
-        .call-to-action p {
-            margin-bottom: 30px;
-            font-family: sans-serif;
-        }
-    </style>
 </head>
 
 <body>
@@ -120,7 +35,7 @@
                   <li><a href="#">Our Team</a></li>
                 </ul>
               </li>
-              <li><a href="#">Login</a></li>
+              <li><a href="http://localhost:3000/auth/google_oauth2?auth_origin_url=http://localhost:3005/home.html">Login</a></li>
             </ul>
           </div>
         </div>
@@ -145,7 +60,9 @@
           platforms, we set out to create a community that
           brings people together in an intimate setting that
           facilitates sharing so mutual trust can arise. </p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Let's go &raquo;</a> <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          <p>Do you want to be part of it?</p>
+        </p>
+          <p><a class="btn btn-primary btn-lg" href="http://localhost:3000/auth/google_oauth2?auth_origin_url=http://localhost:3005/home.html" role="button">Let's go &raquo;</a> <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
         </div>
     </div>
       
