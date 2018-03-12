@@ -3,8 +3,8 @@ import AddMessageComponent from '../components/chat/AddMessage'
 import { addMessage } from '../actions'
 
 const mapDispatchToProps = dispatch => ({
-    dispatch: (message, author, timestamp) => {
-        dispatch(addMessage(message, author))
+    dispatch: (message, author, avatar) => {
+        dispatch(addMessage(message, author, avatar))
     }
 })
 
