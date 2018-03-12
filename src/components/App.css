@@ -5,6 +5,9 @@
 }
 body {
     font-family: "Press Start 2P";
+    background: rgb(255, 255, 255);
+    color: rgb(37, 37, 37);
+    font-family: 'Montserrat', sans-serif;
 }
 #container {
     display: grid;

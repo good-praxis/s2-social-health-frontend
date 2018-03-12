@@ -12,10 +12,10 @@
 .center-block {
 	text-align: center;
 }
-
+/* both sidebar names and bottom 3 icons on homepage */
 body {
     background: rgb(255, 255, 255);
-    color: #FFA69E;
+    color: rgb(255, 208, 176);
     font-family: 'Montserrat', sans-serif;
   }
   h1,
@@ -66,7 +66,7 @@ body {
     background: rgb(198, 248, 232);
   }
   .navbar-inverse .navbar-nav .dropdown-menu li a:hover {
-    background: rgb(230, 247, 0);
+    background: rgb(215, 255, 230);
   }
   .dropdown-menu li a {
     padding: 10px;
@@ -96,4 +96,9 @@ body {
   .call-to-action p {
     margin-bottom: 30px;
     font-family: sans-serif;
+  }
+  .navbar-toggle {
+      background-color: rgb(188, 255, 213);
+      border-color: white;
+      color: red;
   }
