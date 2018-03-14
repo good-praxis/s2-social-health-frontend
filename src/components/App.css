@@ -26,7 +26,7 @@ body {
   width: 100vw;
   padding: 5px;
   margin-left: 0px;
-  border-top: 1px solid #919191;
+  border-top: solid rgb(240, 240, 240);  
   z-index: 1;
   background-color: rgb(244, 253, 250);
   grid-area: main;
@@ -38,7 +38,8 @@ body {
 #sidebar {
   grid-area: sidebar;
   margin-top: 4rem;
-  background-color: rgba(238, 238, 238, 0.979);
+  background-color: rgba(252, 252, 252, 0.979);
+  border-right: solid rgb(240, 240, 240);
 }
 
 #footer {
@@ -69,6 +70,7 @@ ul.topnav {
   overflow: hidden;
   background-color: rgb(198, 236, 227);
   position: fixed;
+  border-bottom: solid rgb(240, 240, 240);
 }
   
 ul.topnav li {float: left;}
