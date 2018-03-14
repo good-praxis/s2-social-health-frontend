@@ -48,7 +48,7 @@ body {
     color: rgb(110, 110, 110);
     font-size: 26px;
   }
-  .navbar-inverse {
+  .navbar-default {
     background: rgb(255, 255, 255);
     border: 0;
   }
@@ -57,14 +57,14 @@ body {
     border-radius: 0;
     border: 0;
   }
-  .navbar-inverse .navbar-nav li a {
+  .navbar-default .navbar-nav li a {
     color: rgb(75, 75, 75);
     font-size: 16px;
   }
-  .navbar-inverse .navbar-nav li a:hover {
+  .navbar-default .navbar-nav li a:hover {
     background: rgb(198, 248, 232);
   }
-  .navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+  .navbar-default .navbar-nav .dropdown-menu li a:hover {
     background: rgb(215, 255, 230);
   }
   .dropdown-menu li a {
@@ -100,4 +100,7 @@ body {
       background-color: rgb(188, 255, 213);
       border-color: white;
       color: red;
+  }
+  .page-footer {
+    background-color: rgb(251, 255, 0);
   }
