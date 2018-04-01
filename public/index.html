@@ -3,7 +3,7 @@
 
 <head>
     <title>unomni</title>
-    <link rel="icon" href="images/donutt.png" type="image/png">
+    <link rel="icon" href="images/icon.png" type="image/png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
     <link rel="stylesheet" href="stylesheets/style.css">    
     <meta name="robots" content="noindex,nofollow">
@@ -14,18 +14,42 @@
 </head>
 
 <body>
+
+    <nav class="navbar navbar-default navbar-static-top">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" height="22" /></a>              
+        <div class="menu">
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Development</a></li>
+                    <li><a href="http://localhost:3000/auth/google_oauth2?auth_origin_url=http://localhost:3005/messenger.html">Login</a></li>
+                  </ul>
+                </li>
+              </ul>
+        </div>
+      </nav>
+
+  <!--
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <a class="navbar-brand" href="#"><span aria-hidden="true"><img src="images/logo.png" height="22" /></span></a>              
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" aria-expanded="false">
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
             </button>
-            <a class="navbar-brand" href="#"><span aria-hidden="true"><img src="images/logo.png" height="22" /></span></a>
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="collapse-1">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">Contact</a></li>
               <li class="dropdown">
@@ -41,6 +65,7 @@
           </div>
         </div>
       </nav>
+    -->
 
     <div class="jumbotron1">
         <div class="container">
@@ -88,41 +113,8 @@
           </div>
         </div>
     </section>
-    <div class="footer-section">
-      <div class="footer-need-help-box w-clearfix">
-        <div class="ready-to-join-heading">Ready to be part of our community?</div>
-          <a href="contact" class="footer-contact-btn w-button">Join us</a></div>
-      <div class="footer-content w-clearfix">
-        <div class="footer-photo-div"></div>
-        <div class="footer-sec-pic"></div>
-        <div class="footer-links-container">
-          <div class="wrapper-footer-links">
-            <a href="work" class="footer-links">Work</a>
-            <a href="about" class="footer-links">About</a>
-            <a href="impressum" class="footer-links">Impressum</a>
-            <div class="contact-div-container w-clearfix">
-              <div class="contact-div">
-                <div class="footer-label">Office</div>
-                  <a href="https://www.google.de/maps/place/Lohm%C3%BChlenstra%C3%9Fe+65,+12435+Berlin/@52.4940439,13.444088,17z/data=!3m1!4b1!4m5!3m4!1s0x47a84facba3a056b:0xb25527b64dd504ba!8m2!3d52.4940407!4d13.4462767" target="_blank" class="footer-ext-link">Lohmühlenstraße 65,<br>Berlin,<br>Germany</a></div>
-              <div class="contact-div">
-                <div class="footer-label">Contact</div>
-                  <a href="mailto:info@unomni.com" class="footer-ext-link">info@unomni.com</a></div>
-              <div class="contact-div footer-more">
-                <div class="footer-label">Learn More</div>
-                  <a href="" target="_blank" class="footer-ext-link">FAQ</a>
-                  <a href="" target="_blank" class="footer-ext-link">Terms of Service</a>
-                  <a href="https://unomni.com/impressum" target="_blank" class="footer-ext-link">Impressum</a>
-                  <a href="" target="_blank" class="footer-ext-link">Facebook</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="address-box">
-        <div>Made in Germany - Copyright CODE University 2018 - All Rights Reserved</div>
-      </div>
-    </div>
+
     
-    <!--
     <footer class = "page-footer">
         <div class = "container">
             <div class = "row">
@@ -147,6 +139,11 @@
             </div>
         </div>
     </footer>
-  -->
+
+  <script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+  </script>
 </body>
 </html>

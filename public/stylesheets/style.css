@@ -25,15 +25,43 @@ body {
     font-size: 16px;
     color: #474747;
   }
+
+/* navigation bar */
   .navbar {
     margin-bottom: 0;
     position: fixed;
     width: 100%;
     box-shadow: 0 6px 20px 0 rgba(61, 85, 75, 0.055);
   }
+  .menu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(90, 90, 90);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Main */
   .jumbotron1 h1 {
     background: rgb(255, 255, 255);
-    color: rgb(152, 230, 190);
+    color: rgb(162, 184, 172);
     text-align: left;
     font-size: 100px;
     margin: 180px 90px 190px 50px;
