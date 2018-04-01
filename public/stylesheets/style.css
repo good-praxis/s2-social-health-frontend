@@ -1,18 +1,4 @@
-.construction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#construction-image {
-	width: 100px;
-    height: 100px;
-}
-
-.center-block {
-	text-align: center;
-}
-body {
+  body {
     background: rgb(255, 255, 255);
     color: rgb(255, 208, 176);
     font-family: 'Montserrat', sans-serif;
@@ -33,27 +19,30 @@ body {
     width: 100%;
     box-shadow: 0 6px 20px 0 rgba(61, 85, 75, 0.055);
   }
+
   .menu {
     display: inline-block;
     cursor: pointer;
+    text-align: right;
 }
 
-.bar1, .bar2, .bar3 {
+  .bar1, .bar2, .bar3 {
     width: 35px;
-    height: 5px;
-    background-color: rgb(90, 90, 90);
-    margin: 6px 0;
+    height: 2px;
+    border-radius: 25px;    
+    background-color: rgb(114, 114, 114);
+    margin: 9px 0;
     transition: 0.4s;
 }
 
-.change .bar1 {
+  .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+  .change .bar2 {opacity: 0;}
 
-.change .bar3 {
+  .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
@@ -89,12 +78,7 @@ body {
     color: rgb(75, 75, 75);
     font-size: 16px;
   }
-  .navbar-default .navbar-nav li a:hover {
-    background: rgb(198, 248, 232);
-  }
-  .navbar-default .navbar-nav .dropdown-menu li a:hover {
-    background: rgb(215, 255, 230);
-  }
+
   .dropdown-menu li a {
     padding: 10px;
   }
