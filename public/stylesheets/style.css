@@ -28,7 +28,8 @@
   .menu {
     display: inline-block;
     cursor: pointer;
-    width: 100%
+    width: 100%;
+    background-color: blue;
 }
 
   .hammenu {
@@ -39,11 +40,11 @@
   }
 
   .bar1, .bar2, .bar3 {
-    width: 35px;
+    width: 30px;
     height: 2px;
     border-radius: 25px;    
-    background-color: rgb(114, 114, 114);
-    margin: 9px 0;
+    background-color: rgb(163, 163, 163);
+    margin: 8px 0;
     transition: 0.4s;
 }
 
@@ -59,8 +60,9 @@
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+/* Navbar transparency*/
   .navbar-default {
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255, 0.7);
   }
 
   /* Menu dropdown */
@@ -80,12 +82,23 @@
   }
 
 /* Main */
+  .onewave {
+    width: 100%;
+    height: 100px;
+    opacity: 0.6;
+  }
+
+  .waves {
+    width: 100%;
+    height: 550px;
+    opacity: 0.6;
+  }
   .jumbotron1 h1 {
     background: rgb(255, 255, 255);
     color: rgb(162, 184, 172);
-    text-align: left;
+    text-align: center;
     font-size: 100px;
-    margin: 180px 90px 190px 50px;
+    margin: 20px 0px 50px 0px;
   }
   .jumbotron {
     background: rgb(255, 236, 226);
@@ -107,7 +120,7 @@
   .btn-primary:hover {
     color: rgb(255, 162, 86);
     background-color: rgb(255, 255, 255);
-    border-color: rgb(121, 121, 121);
+    border-color: rgb(180, 36, 36);
   }
   .glyphicon-large {
     font-size: 100px;
