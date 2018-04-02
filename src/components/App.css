@@ -60,7 +60,7 @@ button {
   font-style: italic;
 }
 
-/* Navigation bar */
+/* Navigation bar 
 ul.topnav {
   list-style-type: none;
   margin: 0;
@@ -92,4 +92,70 @@ ul.topnav li.right {float: right;}
   ul.topnav li.right, 
   ul.topnav li {float: none;}
 }
+*/
 
+/* Navigation bar */
+.navbar {
+  margin-bottom: 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 6px 20px 0 rgba(61, 85, 75, 0.055);
+}
+
+.navbar-brand {
+  padding-top: 20px;
+}
+
+.menu {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%
+}
+
+.hammenu {
+  float: right;
+  margin: 0 20px 10px 0;
+  padding-top: 0;
+
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 2px;
+  border-radius: 25px;    
+  background-color: rgb(114, 114, 114);
+  margin: 9px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.navbar-default {
+  background: rgb(255, 255, 255);
+}
+
+/* Menu dropdown */
+.dropdown-menu {
+  background: rgb(255, 255, 255);
+  border-radius: 0;
+  border: 0;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+}
+
+.navbar-default .navbar-nav li a {
+  color: rgb(75, 75, 75);
+  font-size: 16px;
+}
