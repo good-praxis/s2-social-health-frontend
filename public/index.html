@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>unomni</title>
+    <title>Unomni</title>
     <link rel="icon" href="images/icon.png" type="image/png">
     <link rel="background" href="images/6097.jpg" type="image/png">  
     <link rel="background" href="images/6096.png" type="image/png">   
+    <link rel="background" href="images/slice.png" type="image/png">   
     <link rel="icon" href="images/globeicon.png" type="image/png">        
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
@@ -19,111 +20,88 @@
 
 <body>
   
-  <div class="menu navbar navbar-default navbar-static-top">
-    <a class="navbar-brand" href="#"><img src="images/logo.png" height="24" /></a>                          
-    <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
-          <div class="hammenu" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div> 
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Development</a></li>
-          <li><a href="http://localhost:3000/auth/google_oauth2?auth_origin_url=http://localhost:3005/messenger.html">Login</a></li>
-        </ul>
-      </li>
-    </ul>
+<div class="menu navbar navbar-default navbar-static-top">
+  <a class="navbar-brand" href="#"><img src="images/logo.png" height="24" /></a>                          
+  <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+        <div class="hammenu" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div> 
+      </a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Development</a></li>
+        <li><a href="http://localhost:3000/auth/google_oauth2?auth_origin_url=http://localhost:3005/messenger.html">Login</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="questions jumbotron1">
+  <img class="onewave" src="images/6096.png" height="24">  
+  <div class="first-question container">
+    <h1 class="headline">What is the most normal thing about you? </h1>           
   </div>
- <div>
-  <img class="onewave" src="images/6096.png" height="24">
-  <div class="jumbotron1">
-      <div class="container">
-          <h1 class="headline">We're in this together
-              <img class="globeicon" src="images/globeicon.png" height="100">  </h1>       
-      </div>
+  <img class="waves" src="images/6097.png" height="24">    
+  <div class="second-question container">
+    <h1 class="headline">What's the best part of your day? </h1>               
+  </div>
+  <img class="waves-bw" src="images/slice.png" height="24">
+  <div class="second-question container">
+    <h1 class="headline">If you didn’t have to sleep, what would you do with the extra time? </h1>                
   </div>
   <img class="waves" src="images/6097.png" height="24">
-</div> 
+</div>
 
+<div class="intro">  
+  <div class="container jumbotron1">
+    <h1 class="headline">We all need a bit more mindfulness </h1>
+  </div>
+    <h1 class="welcome">Welcome to Unomni,</br>
+                        a place where you can reflect </br>
+                        while being part of a community </h1>
+  <img class="waves-bw" src="images/slice.png" height="24">
+  <div class="container">
+    <h1 class="headline">How? </h1>
+  </div>
+</div>
 
-<!--
-    <i class="glyphicon glyphicon-arrow-down"></i>
-
-    <div class="jumbotron">
-        <div class="container">
-          <h1 class="headline"></h1>
-          <p>This is unomni. <br> </p>
-          <p>A framework to connect you to a group of 6
-          individuals in an environment that inspires mutual
-          support and personal growth.</p>
-          <p>As an alternative to current social media
-          platforms, we set out to create a community that
-          brings people together in an intimate setting that
-          facilitates sharing so mutual trust can arise. </p>
-          <p>Do you want to be part of it?</p>
-        </p>
-          <p><a class="btn btn-primary btn-lg" href="http://localhost:3000/auth/google_oauth2?auth_origin_url=http://localhost:3005/messenger.html" role="button">Let's go &raquo;</a> <a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
-        </div>
-    </div>
-
-    <section class="call-to-action">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <span class="glyphicon glyphicon-heart glyphicon-large" aria-hidden="true"></span>
-              <h3>Bond</h3>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            </div>
-            <div class="col-md-4">
-              <span class="glyphicon glyphicon-user glyphicon-large" aria-hidden="true"></span>
-              <h3>Reflect</h3>
-              <p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
-            </div>
-            <div class="col-md-4">
-              <span class="glyphicon glyphicon-leaf glyphicon-large" aria-hidden="true"></span>
-              <h3>Explore</h3>
-              <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            </div>
-          </div>
-        </div>
-    </section>
-
-  -->
     
-    <footer class = "page-footer">
-        <div class = "container">
-            <div class = "row">
-                <div class = "col-md-4">
-                    <h4>UNOMNI</h4>
-                    <p>Why use Unomni</p> 
-                    <p>Functions</p>
-                    <p>Datenschutzerklärung</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>WHO WE ARE</h4>
-                    <p>About Us</p>
-                    <p>Work with us</p>
-                    <p>Impressum</p>
-                </div>
-                <div class="col-md-4">
-                    <h4>HELP</h4>
-                    <p>FAQ</p>
-                    <p>Contact</p>
-                    <p>Terms of Service / Terms of Usage</p>    
-                 </div>
-            </div>
-        </div>
-    </footer>
+<footer class = "page-footer">
+  <img class="onewave" src="images/6096.png" height="24">
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-md-4">
+        <h4>UNOMNI</h4>
+          <p>Why use Unomni</p> 
+          <p>Functions</p>
+          <p>Datenschutzerklärung</p>
+    </div>
+    <div class="col-md-4">
+        <h4>WHO WE ARE</h4>
+          <p>About Us</p>
+          <p>Work with us</p>
+          <p>Impressum</p>
+    </div>
+    <div class="col-md-4">
+        <h4>HELP</h4>
+          <p>FAQ</p>
+          <p>Contact</p>
+          <p>Terms of Service / Terms of Usage</p>    
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <script>
-    function myFunction(x) {
-        x.classList.toggle("change");
-    }
-  </script>
+<script>
+  function myFunction(x) {
+      x.classList.toggle("change");
+  }
+</script>
+
 </body>
 
 <!-- Artist Credit -->
