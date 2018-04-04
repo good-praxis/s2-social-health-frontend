@@ -18,7 +18,8 @@
     margin-bottom: 0;
     position: fixed;
     width: 100%;
-    box-shadow: 0 6px 20px 0 rgba(61, 85, 75, 0.055);
+    /*box-shadow: 0 6px 20px 0 rgba(61, 85, 75, 0.1);*/
+    border: 0;
   }
 
   .navbar-brand {
@@ -41,9 +42,9 @@
 
   .bar1, .bar2, .bar3 {
     width: 30px;
-    height: 2px;
+    height: 3px;
     border-radius: 25px;    
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(107, 107, 107);
     margin: 8px 0;
     transition: 0.4s;
 }
@@ -62,7 +63,7 @@
 
 /* Navbar transparency*/
   .navbar-default {
-    background: rgb(255, 255, 255, 0.7);
+    background: rgb(255, 255, 255, 0.0);
   }
 
   /* Menu dropdown */
@@ -77,7 +78,7 @@
   }
 
   .navbar-default .navbar-nav li a {
-    color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
     font-size: 16px;
   }
 
@@ -153,4 +154,81 @@
   }
   .page-footer {
     background-color: rgb(255, 255, 255);
+  }
+
+
+  /*Background from Figma*/
+
+  .desktop {
+    position: relative;
+    width: 1024px;
+    height: 4052px;
+    background: #FFFFFF;
+  }
+
+  .ellipse1 {
+    position: absolute;
+    width: 1315.33px;
+    height: 787px;
+    left: -181px;
+    top: -78.82px;
+    background: #FFFFFF;
+    transform: rotate(-13.33deg);
+  }
+  .rectangle1 {
+    position: absolute;
+    width: 1024px;
+    height: 653px;
+    left: 0px;
+    top: 338px;
+    background: rgba(71, 204, 132, 0.27);
+}
+
+  .ellipse2 {
+    position: absolute;
+    width: 1315.33px;
+    height: 787px;
+    left: -219px;
+    top: 876.18px;
+    background: #FFFFFF;
+    transform: rotate(-13.33deg);
+  } 
+
+  .ellipse3 {
+    position: absolute;
+    width: 1469px;
+    height: 787px;
+    left: -313px;
+    top: 1526.02px;
+    background: rgba(241, 205, 205, 0.28);
+    transform: rotate(-20.02deg);
+  }
+  .ellipse4 {
+    position: absolute;
+    width: 1903.57px;
+    height: 787px;
+    left: -179.94px;
+    top: 1659px;
+    background: #FFFFFF;
+    transform: rotate(4.09deg);
+  }
+
+  .ellipse5 {
+    position: absolute;
+    width: 1469px;
+    height: 802.25px;
+    left: -48.94px;
+    top: 2054.05px;
+    background: #CDF1DE;
+    transform: rotate(19.06deg);
+  }
+
+  .ellipse6 {
+    position: absolute;
+    width: 1225.91px;
+    height: 1127.89px;
+    left: 286.27px;
+    top: 3232px;
+    background: #CDF1DE;
+    transform: rotate(19.06deg);
   }
