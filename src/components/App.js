@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Sidebar } from "../containers/Sidebar";
-import { MessagesList } from "../containers/MessagesList";
-import { AddMessage } from "../containers/AddMessage"
+import Sidebar from "../components/chat/Sidebar";
+import MessagesList from "../components/chat/MessagesList";
 import StorageAdaptor from '../utils/StorageAdaptor';
 import queryString from 'query-string'
+import AddMessage from "../components/chat/AddMessage"
+import Store from "../utils/Store"
 
 class App extends Component {
+  state = {
+    messages: [],
+    users: [],
+  }
   componentWillMount(){
+
      var params = queryString.parse(window.location.search)
 
      if (params["auth_token"] && params["uid"] && params["client_id"] && params["expiry"]) {
@@ -27,14 +33,23 @@ class App extends Component {
        window.location.search = '?';
      }
    }
+   addMessage = (messagecontent)=> {
+     Store.post("messages", {message_content:messagecontent}).then((createdMessage)=>{
+       let newmessages = this.state.messages.concat([createdMessage])
+       this.setState({messages:newmessages})
+     })
+
+
+   }
     render() {
+      let {messages,users} = this.state
         return (
             <div id="container">
                 <section id="main">
-                    <MessagesList />
-                    <AddMessage />
+                    <MessagesList messages={messages}/>
+                    <AddMessage onAddMessage={this.addMessage}/>
                 </section>
-                <Sidebar />
+                <Sidebar users={users} />
             </div>
         )
     }

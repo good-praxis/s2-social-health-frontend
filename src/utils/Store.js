@@ -1,6 +1,6 @@
 import StorageAdaptor from './StorageAdaptor';
 
-var API_URL = "localhost:3000/";
+var API_URL = "http://localhost:3000/";
 
 
 function get(url){
@@ -30,7 +30,7 @@ function query(url,paramsObj){
     .then(parseJSON);
 }
 
-function post(url,obj,cb,fail){
+function post(url,obj){
   var sendHeaders = {
     'accept': 'application/json',
     'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ function post(url,obj,cb,fail){
   .then(parseJSON);
 }
 
-function put(url,obj,cb,fail){
+function put(url,obj){
   var sendHeaders = {
     'accept': 'application/json',
     'Content-Type': 'application/json'

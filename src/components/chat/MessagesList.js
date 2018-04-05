@@ -8,12 +8,13 @@ class MessagesList extends Component {
         this.state = {scrollPos: 0}
     }
     render() {
+      console.log(this.props.messages)
         return(
             <section id="messages-list">
                 <ul>
                     {this.props.messages.map(message => (
                         <Message
-                            key={message.id}
+                            //key={message.id}
                             {...message}
                         />
                     ))}
@@ -33,20 +34,6 @@ class MessagesList extends Component {
         if(document.documentElement.scrollTop >= this.state.scrollPos) {
             window.scrollTo(0, document.body.scrollHeight)
         }
-        fetch("http://localhost:3000/ranks", {
-            method: 'POST',
-            // mode: 'no-cors',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                rank_id: 1,
-                rank_type: false,
-                rank_name: "Advanced",
-                rank_description: "Tes"
-            })
-        })
 
     }
 }
@@ -56,16 +43,16 @@ class MessagesList extends Component {
 
 
 
-MessagesList.propTypes = {
-    message: propTypes.arrayOf(
-        propTypes.shape({
-            id: propTypes.number.isRequired,
-            message: propTypes.string.isRequired,
-            author: propTypes.string.isRequired,
-            timestamp: propTypes.string.isRequired,
-            date: propTypes.string.isRequired
-        }).isRequired
-    )
-}
+// MessagesList.propTypes = {
+//     message: propTypes.arrayOf(
+//         propTypes.shape({
+//             id: propTypes.number.isRequired,
+//             message: propTypes.string.isRequired,
+//             author: propTypes.string.isRequired,
+//             timestamp: propTypes.string.isRequired,
+//             date: propTypes.string.isRequired
+//         }).isRequired
+//     )
+// }
 
 export default MessagesList
