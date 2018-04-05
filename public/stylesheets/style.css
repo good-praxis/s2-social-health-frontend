@@ -1,13 +1,3 @@
-  body {
-    background: rgb(255, 255, 255);
-    color: rgb(255, 208, 176);
-    font-family: 'Roboto', sans-serif;
-  }
-
-  p {
-      font-size: 48px;
-  }
-
 /* Navigation bar */
   .navbar {
     margin-bottom: 0;
@@ -78,21 +68,23 @@
   }
 
 /* Main */
-  
-  .call-to-action {
-    text-align: center;
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
   }
-  .call-to-action p {
-    margin-bottom: 30px;
-    font-family: sans-serif;
+
+  p {
+      font-size: 48px;
   }
-  .navbar-toggle {
-      background-color: rgb(188, 255, 213);
-      border-color: white;
-      color: red;
+
   }
   .page-footer {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 234, 234);
   }
 
   .page-footer p {
