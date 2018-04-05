@@ -1,16 +1,11 @@
   body {
     background: rgb(255, 255, 255);
     color: rgb(255, 208, 176);
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  h1, h2 {
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
   }
 
   p {
-    font-size: 16px;
-    color: #474747;
+      font-size: 48px;
   }
 
 /* Navigation bar */
@@ -66,7 +61,7 @@
     background: rgb(255, 255, 255, 0.0);
   }
 
-  /* Menu dropdown */
+/* Menu dropdown */
   .dropdown-menu {
     background: rgb(255, 255, 255);
     border-radius: 0;
@@ -83,63 +78,7 @@
   }
 
 /* Main */
-  .onewave {
-    width: 100%;
-    height: 100px;
-    opacity: 0.9;
-  }
-
-  .waves {
-    width: 100%;
-    height: 450px;
-    opacity: 0.9;
-  }
-  .waves-bw {
-    width: 100%;
-    height: 450px;
-    opacity: 0.9;
-  }
-  .jumbotron1 h1 {
-    background: rgb(255, 255, 255);
-    color: rgb(36, 218, 139);
-    font-size: 60px;
-    margin: 20px 0px 20px 50px;
-    text-align: right;
-  }
-  .jumbotron {
-    background: rgb(255, 236, 226);
-    color: rgb(100, 100, 100);
-    text-align: center;
-    margin: 0px 0px 70px 0px;
-  }
-  .jumbotron p {
-    color: rgb(110, 110, 110);
-    font-size: 26px;
-  }
-  .welcome {
-    text-align: left;
-    margin-left: 20px;
-  }
-
-  .btn-primary {
-    color: rgb(83, 83, 83);
-    background-color: transparent;
-    border-color: rgb(116, 116, 116);
-    margin-bottom: 5px;
-  }
-  .btn-primary:hover {
-    color: rgb(255, 162, 86);
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(180, 36, 36);
-  }
-  .glyphicon-large {
-    font-size: 100px;
-  }
-  .glyphicon-arrow-down {
-    margin-left: 49%;
-    font-size: 60px;
-    margin-bottom: 20px;
-  }
+  
   .call-to-action {
     text-align: center;
   }
@@ -156,17 +95,21 @@
     background-color: rgb(255, 255, 255);
   }
 
+  .page-footer p {
+    font-size: 20px;
+  }
+
 
   /*Background from Figma*/
 
   .desktop {
     position: relative;
-    width: 1024px;
+    width: 100%;
     height: 4052px;
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   }
 
-  .ellipse1 {
+  .ellipse {
     position: absolute;
     width: 1315.33px;
     height: 787px;
@@ -174,14 +117,16 @@
     top: -78.82px;
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     transform: rotate(-13.33deg);
+     border-radius: 50%;
   }
-  .rectangle1 {
+  .ellipse1 {
     position: absolute;
     width: 1024px;
     height: 653px;
     left: 0px;
     top: 338px;
     background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+    border-radius: 50%;
   }
 
   .ellipse2 {
@@ -192,6 +137,7 @@
     top: 876.18px;
     background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
     transform: rotate(-13.33deg);
+    border-radius: 50%;
   } 
 
   .ellipse3 {
@@ -202,6 +148,7 @@
     top: 1526.02px;
     background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);;
     transform: rotate(-20.02deg);
+    border-radius: 50%;
   }
   .ellipse4 {
     position: absolute;
@@ -211,6 +158,7 @@
     top: 1659px;
     background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
     transform: rotate(4.09deg);
+    border-radius: 50%;
   }
 
   .ellipse5 {
@@ -221,6 +169,7 @@
     top: 2054.05px;
     background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
     transform: rotate(19.06deg);
+    border-radius: 50%;
   }
 
   .ellipse6 {
@@ -231,4 +180,5 @@
     top: 3232px;
     background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
     transform: rotate(19.06deg);
+    border-radius: 50%;
   }
