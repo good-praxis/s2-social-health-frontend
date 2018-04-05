@@ -109,7 +109,7 @@ ul.topnav li.right {float: right;}
 .menu {
   display: inline-block;
   cursor: pointer;
-  width: 100%
+  width: 100%;
 }
 
 .hammenu {
