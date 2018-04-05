@@ -3,7 +3,6 @@
     margin-bottom: 0;
     position: fixed;
     width: 100%;
-    /*box-shadow: 0 6px 20px 0 rgba(61, 85, 75, 0.1);*/
     border: 0;
   }
 
@@ -15,8 +14,9 @@
     display: inline-block;
     cursor: pointer;
     width: 100%;
-    background-color: blue;
-}
+    background: rgb(255, 255, 255, 0.0);
+    
+  }
 
   .hammenu {
     float: right;
@@ -45,11 +45,6 @@
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
-
-/* Navbar transparency*/
-  .navbar-default {
-    background: rgb(255, 255, 255, 0.0);
-  }
 
 /* Menu dropdown */
   .dropdown-menu {
@@ -80,9 +75,11 @@
 
   p {
       font-size: 48px;
+      position: relative;
+      padding: 60px 0 0 50px;
+      
   }
 
-  }
   .page-footer {
     background-color: rgb(255, 234, 234);
   }
@@ -92,7 +89,7 @@
   }
 
 
-  /*Background from Figma*/
+  /*Background*/
 
   .desktop {
     position: relative;
@@ -109,7 +106,7 @@
     top: -78.82px;
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     transform: rotate(-13.33deg);
-     border-radius: 50%;
+    border-radius: 50%;
   }
   .ellipse1 {
     position: absolute;
