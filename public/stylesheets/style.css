@@ -98,7 +98,7 @@
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   }
 
-  .ellipse {
+  .first {
     position: absolute;
     width: 1315.33px;
     height: 787px;
@@ -108,7 +108,7 @@
     transform: rotate(-13.33deg);
     border-radius: 50%;
   }
-  .ellipse1 {
+  .second {
     position: absolute;
     width: 1024px;
     height: 653px;
@@ -118,7 +118,7 @@
     border-radius: 50%;
   }
 
-  .ellipse2 {
+  .third {
     position: absolute;
     width: 1315.33px;
     height: 787px;
@@ -129,7 +129,7 @@
     border-radius: 50%;
   } 
 
-  .ellipse3 {
+  .fourth {
     position: absolute;
     width: 1469px;
     height: 787px;
@@ -139,7 +139,7 @@
     transform: rotate(-20.02deg);
     border-radius: 50%;
   }
-  .ellipse4 {
+  .fifth {
     position: absolute;
     width: 1903.57px;
     height: 787px;
@@ -150,7 +150,7 @@
     border-radius: 50%;
   }
 
-  .ellipse5 {
+  .sixth {
     position: absolute;
     width: 1469px;
     height: 802.25px;
@@ -161,7 +161,7 @@
     border-radius: 50%;
   }
 
-  .ellipse6 {
+  .seventh {
     position: absolute;
     width: 1225.91px;
     height: 1127.89px;
