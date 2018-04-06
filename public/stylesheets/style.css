@@ -69,14 +69,13 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    /*background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);*/
 
   }
 
   p {
       font-size: 48px;
       position: relative;
-      padding: 60px 0 0 50px;
       
   }
 
@@ -92,8 +91,9 @@
     padding-top: 200px;
   }
 
-  .jumbotron, .container {
+  .w3-container {
     border-radius: 6px;
+    font-size: 48px;
   }
 
   .page-footer {
@@ -105,83 +105,4 @@
   }
 
 
-  /*Background*/
-
-  .desktop {
-    position: relative;
-    width: 100%;
-    height: 4052px;
-    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-  }
-
-  .first {
-    position: absolute;
-    width: 1315.33px;
-    height: 787px;
-    left: -181px;
-    top: -78.82px;
-    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
-    transform: rotate(-13.33deg);
-  }
-  .second {
-    position: absolute;
-    width: 1024px;
-    height: 653px;
-    left: 0px;
-    top: 338px;
-    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
-  }
-
-  .third {
-    position: absolute;
-    width: 1315.33px;
-    height: 787px;
-    left: -219px;
-    top: 876.18px;
-    background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
-    transform: rotate(-13.33deg);
-  } 
-
-  .fourth {
-    position: absolute;
-    width: 1469px;
-    height: 787px;
-    left: -313px;
-    top: 1526.02px;
-    background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);;
-    transform: rotate(-20.02deg);
-  }
-  .fifth {
-    position: absolute;
-    width: 1903.57px;
-    height: 787px;
-    left: -179.94px;
-    top: 1659px;
-    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
-    transform: rotate(4.09deg);
-  }
-
-  .sixth {
-    position: absolute;
-    width: 1469px;
-    height: 802.25px;
-    left: -48.94px;
-    top: 2054.05px;
-    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
-    transform: rotate(19.06deg);
-  }
-
-  .seventh {
-    position: absolute;
-    width: 1225.91px;
-    height: 1127.89px;
-    left: 286.27px;
-    top: 3232px;
-    background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
-    transform: rotate(19.06deg);
-  }
-
-  .ellipse {
-    border-radius: 50%;   
-     
-  }
+  
