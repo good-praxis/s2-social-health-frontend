@@ -80,6 +80,22 @@
       
   }
 
+  .normal {
+    padding-top: 300px;
+  }
+
+  .best {
+    padding-top: 200px;
+  }
+
+  .time {
+    padding-top: 200px;
+  }
+
+  .jumbotron, .container {
+    border-radius: 6px;
+  }
+
   .page-footer {
     background-color: rgb(255, 234, 234);
   }
@@ -106,7 +122,6 @@
     top: -78.82px;
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     transform: rotate(-13.33deg);
-    border-radius: 50%;
   }
   .second {
     position: absolute;
@@ -115,7 +130,6 @@
     left: 0px;
     top: 338px;
     background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
-    border-radius: 50%;
   }
 
   .third {
@@ -126,7 +140,6 @@
     top: 876.18px;
     background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
     transform: rotate(-13.33deg);
-    border-radius: 50%;
   } 
 
   .fourth {
@@ -137,7 +150,6 @@
     top: 1526.02px;
     background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);;
     transform: rotate(-20.02deg);
-    border-radius: 50%;
   }
   .fifth {
     position: absolute;
@@ -147,7 +159,6 @@
     top: 1659px;
     background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
     transform: rotate(4.09deg);
-    border-radius: 50%;
   }
 
   .sixth {
@@ -158,7 +169,6 @@
     top: 2054.05px;
     background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
     transform: rotate(19.06deg);
-    border-radius: 50%;
   }
 
   .seventh {
@@ -169,5 +179,9 @@
     top: 3232px;
     background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
     transform: rotate(19.06deg);
-    border-radius: 50%;
+  }
+
+  .ellipse {
+    border-radius: 50%;   
+     
   }
