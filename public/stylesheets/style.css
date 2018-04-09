@@ -1,4 +1,6 @@
 /* Navigation bar */
+
+
   .navbar {
     margin-bottom: 0;
     position: fixed;
@@ -15,7 +17,7 @@
     cursor: pointer;
     width: 100%;
     background: rgb(255, 255, 255, 0.0);
-    
+
   }
 
   .hammenu {
@@ -28,7 +30,7 @@
   .bar1, .bar2, .bar3 {
     width: 30px;
     height: 3px;
-    border-radius: 25px;    
+    border-radius: 25px;
     background-color: rgb(107, 107, 107);
     margin: 8px 0;
     transition: 0.4s;
@@ -62,6 +64,14 @@
     font-size: 16px;
   }
 
+  .nav-divider {
+    height: 200%;
+  }
+  .dropdown-toogle,
+   .open {
+    background-color: #e7e7e7;
+  }
+
 /* Main */
 
   body {
@@ -76,7 +86,7 @@
   p {
       font-size: 48px;
       position: relative;
-      
+
   }
 
   .normal {
@@ -103,6 +113,3 @@
   .page-footer p {
     font-size: 20px;
   }
-
-
-  
