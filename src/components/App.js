@@ -55,6 +55,8 @@ class App extends Component {
    getMessages() {
      axios.get("http://unomni.com:3000/clusters/1/")
      .then(response => this.setState({messages: response.data.messages}))
+     axios.get("http://unomni.com:3000/clusters/1/")
+     .then(response => this.setState({users: response.data.users}))
    }
 
 
