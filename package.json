@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/codeuniversity/s2-social-health-frontend#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "bourbon": "^5.0.0",
     "chance": "^1.0.13",
     "npm": "^5.8.0",

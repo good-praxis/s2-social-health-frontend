@@ -6,6 +6,7 @@ import StorageAdaptor from '../utils/StorageAdaptor';
 import queryString from 'query-string'
 import AddMessage from "../components/chat/AddMessage"
 import Store from "../utils/Store"
+import axios from "axios"
 
 class App extends Component {
   state = {
@@ -32,6 +33,10 @@ class App extends Component {
        params["expiry"] = undefined;
        window.location.search = '?';
      }
+
+     axios.get("http://unomni.com:3000/clusters/1")
+     .then(response => this.setState({message: response.messages}))
+     .then(console.log(this.state))
    }
    addMessage = (messagecontent)=> {
      Store.post("messages", {message_content:messagecontent}).then((createdMessage)=>{
