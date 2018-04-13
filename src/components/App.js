@@ -42,7 +42,7 @@ class App extends Component {
 
 
 
-     window.setInterval(this.getMessages(), 1000)
+     window.setInterval(this.getMessages, 1000)
    }
 
    shouldComponentUpdate(nextProps, nextState) {
