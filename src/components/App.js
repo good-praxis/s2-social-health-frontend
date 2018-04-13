@@ -9,9 +9,15 @@ import Store from "../utils/Store"
 import axios from "axios"
 
 class App extends Component {
-  state = {
-    messages: [],
-    users: [],
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      messages: [],
+      users: []
+    }
+    this.getMessages = this.getMessages.bind(this)
   }
   componentWillMount(){
 
@@ -34,11 +40,7 @@ class App extends Component {
        window.location.search = '?';
      }
 
-     function getMessages() {
-       axios.get("http://unomni.com:3000/clusters/1/")
-       .then(response => this.setState(response.data.messages))
-       console.log("*notices your API* OwO what's this")
-     }
+
 
      window.setInterval(getMessages(), 1000)
    }
@@ -48,6 +50,12 @@ class App extends Component {
        return false
      }
      return true
+   }
+
+   getMessages() {
+     axios.get("http://unomni.com:3000/clusters/1/")
+     .then(response => this.setState(response.data.messages))
+     console.log("*notices your API* OwO what's this")
    }
 
 
