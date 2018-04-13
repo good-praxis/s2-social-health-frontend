@@ -12,7 +12,6 @@ class App extends Component {
   state = {
     messages: [],
     users: [],
-    getMessagas: getMessages()
   }
   componentWillMount(){
 
@@ -35,10 +34,15 @@ class App extends Component {
        window.location.search = '?';
      }
 
-     axios.get("http://unomni.com:3000/clusters/1/")
-     .then(response => this.setState(response.data.messages))
-     console.log("*notices your API* OwO what's this")
-     window.setTimeout(this.state.getMessages, 250)
+     function getMessages() {
+       axios.get("http://unomni.com:3000/clusters/1/")
+       .then(response => this.setState(response.data.messages))
+       console.log("*notices your API* OwO what's this")
+       window.setTimeout(getMessages(), 250)
+
+     }
+
+     getMessages()
    }
 
    shouldComponentUpdate(nextProps, nextState) {
@@ -48,12 +52,7 @@ class App extends Component {
      return true
    }
 
-   getMessages() {
-     axios.get("http://unomni.com:3000/clusters/1/")
-     .then(response => this.setState(response.data.messages))
-     console.log("*pounces* yummy yummy messages uwu")
-     window.setTimeout(this.state.getMessages, 250)
-   }
+
 
 
    addMessage = (messagecontent)=> {
