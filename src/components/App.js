@@ -35,10 +35,26 @@ class App extends Component {
      }
 
      axios.get("http://unomni.com:3000/clusters/1/")
-     .then(response => console.log(response.data))
-     .then(console.log(this.state))
-     .then(console.log(axios.get("http://unomni.com:3000/clusters/1/")))
+     .then(response => this.setState(response.data.messages))
+     console.log("*notices your API* OwO what's this")
+     window.setTimeout(getMessages, 250)
    }
+
+   shouldComponentUpdate(nextProps, nextState) {
+     if (nextState.messages == this.state.messages) {
+       return false
+     }
+     return true
+   }
+
+   getMessages() {
+     axios.get("http://unomni.com:3000/clusters/1/")
+     .then(response => this.setState(response.data.messages))
+     console.log("*pounces* yummy yummy messages uwu")
+     window.setTimeout(getMessages, 250)
+   }
+
+
    addMessage = (messagecontent)=> {
      Store.post("messages", {message_content:messagecontent}).then((createdMessage)=>{
        let newmessages = this.state.messages.concat([createdMessage])
