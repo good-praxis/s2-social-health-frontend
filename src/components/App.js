@@ -12,7 +12,7 @@ class App extends Component {
   state = {
     messages: [],
     users: [],
-    getMessagas: this.getMessages()
+    getMessagas: getMessages()
   }
   componentWillMount(){
 
