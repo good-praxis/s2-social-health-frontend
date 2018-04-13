@@ -56,6 +56,7 @@ class App extends Component {
      axios.get("http://unomni.com:3000/clusters/1/")
      .then(response => this.setState(response.data.messages))
      console.log("*notices your API* OwO what's this")
+     console.log(this.state.messages)
    }
 
 
