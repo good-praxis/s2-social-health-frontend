@@ -35,7 +35,7 @@ class App extends Component {
      }
 
      axios.get("http://unomni.com:3000/clusters/1/")
-     .then(response => this.setState({message: response.messages}))
+     .then(response => console.log(reponse))
      .then(console.log(this.state))
      .then(console.log(axios.get("http://unomni.com:3000/clusters/1/")))
    }
