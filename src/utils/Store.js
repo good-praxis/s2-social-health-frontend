@@ -1,5 +1,4 @@
 import StorageAdaptor from './StorageAdaptor';
-import axios from "axios"
 
 var API_URL = "http://localhost:3000/";
 
@@ -10,8 +9,7 @@ function get(url){
   };
   var completeHeaders = constructHeadersForRequest(receiveHeaders);
 
-  return fetch(API_URL+url, {
-    headers:completeHeaders
+  return axios.(API_URL+url, {
   })
   .then(checkStatus)
   .then(parseJSON);
@@ -31,21 +29,20 @@ function query(url,paramsObj){
     .then(parseJSON);
 }
 
-// function post(url,obj){
-//   //var sendHeaders = {
-//   //  'accept': 'application/json',
-    //'Content-Type': 'application/json'
-  // ///};
-  // axion.post(url, obj)
-  //var completeHeaders=constructHeadersForRequest(sendHeaders);
-  //
-  // return fetch(API_UL+url,{
-  //   headers: completeHeaders,
-  //   method:"post",
-  //   body:JSON.stringify(obj)
-  // }).then(checkStatus)
-  // .then(parseJSON);
-// }
+function post(url,obj){
+  var sendHeaders = {
+    'accept': 'application/json',
+    'Content-Type': 'application/json'
+  };
+  var completeHeaders=constructHeadersForRequest(sendHeaders);
+
+  return fetch(API_URL+url,{
+    headers: completeHeaders,
+    method:"post",
+    body:JSON.stringify(obj)
+  }).then(checkStatus)
+  .then(parseJSON);
+}
 
 function put(url,obj){
   var sendHeaders = {
@@ -139,6 +136,7 @@ const AuthStore = {
   deauthenticate,
   get,
   query,
+  post,
   put,
   destroy,
   isAuthenticated,
