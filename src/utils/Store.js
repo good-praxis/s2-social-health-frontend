@@ -42,7 +42,6 @@ function post(url,obj){
     method:"post",
     body:JSON.stringify(obj)
   }).then(checkStatus)
-  .then(parseJSON)
   .then(scrollDown);
 }
 
