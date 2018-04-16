@@ -34,18 +34,18 @@ function query(url,paramsObj){
 // function post(url,obj){
 //   //var sendHeaders = {
 //   //  'accept': 'application/json',
-//     //'Content-Type': 'application/json'
-//   //};
-//   axion.post(url, obj)
-//   //var completeHeaders=constructHeadersForRequest(sendHeaders);
-
-  return fetch(API_URL+url,{
-    headers: completeHeaders,
-    method:"post",
-    body:JSON.stringify(obj)
-  }).then(checkStatus)
-  .then(parseJSON);
-}
+    //'Content-Type': 'application/json'
+  // ///};
+  // axion.post(url, obj)
+  //var completeHeaders=constructHeadersForRequest(sendHeaders);
+  //
+  // return fetch(API_URL+url,{
+  //   headers: completeHeaders,
+  //   method:"post",
+  //   body:JSON.stringify(obj)
+  // }).then(checkStatus)
+  // .then(parseJSON);
+// }
 
 function put(url,obj){
   var sendHeaders = {
