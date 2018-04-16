@@ -6,13 +6,14 @@ class MessagesList extends Component {
     constructor(props){
         super(props)
         this.state = {scrollPos: 0}
+        this.state.messages = this.props.messages
     }
     render() {
       console.log(this.props.messages)
         return(
             <section id="messages-list">
                 <ul>
-                    {this.props.messages.map(message => (
+                    {this.state.messages.map(message => (
                         <Message
                             //key={message.id}
                             {...message}
@@ -24,10 +25,6 @@ class MessagesList extends Component {
     }
     componentWillUpdate(nextProps, nextState) {
         this.setState({scrollPos: document.body.scrollHeight - document.body.clientHeight})
-    }
-    shouldComponentUpdate(nextProps, nextState) {
-        return this.props.messages !== nextProps.messages
-
     }
 
     componentDidUpdate(prevProps, prevState){
