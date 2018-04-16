@@ -7,13 +7,14 @@ class AddMessage extends React.Component{
 
 
     }
-    submit = () => {
+    submit = (e) => {
+      e.preventDefault()
       if (this.state.messagecontent !== ""){
         this.props.onAddMessage(this.state.messagecontent)
         this.setState({messagecontent:""})
       }
     }
-    // let input
+
     render(){
       return (
           <section id ="new-message">

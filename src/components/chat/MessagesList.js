@@ -21,7 +21,7 @@ class MessagesList extends Component {
             </section>
         )
     }
-    componentWillMount() {
+    componentDidMount() {
       window.scrollTo(0, document.body.scrollHeight)
     }
 

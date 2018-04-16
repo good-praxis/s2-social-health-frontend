@@ -41,9 +41,8 @@ function post(url,obj){
     headers: completeHeaders,
     method:"post",
     body:JSON.stringify(obj)
-  }).then(checkStatus)
-  .then(parseJSON)
-  .then(scrollDown);
+  });
+
 }
 
 function put(url,obj){
