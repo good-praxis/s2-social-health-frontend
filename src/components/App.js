@@ -15,7 +15,8 @@ class App extends Component {
 
     this.state = {
       messages: [],
-      users: []
+      users: [],
+      scrollPos: 0
     }
     this.getMessages = this.getMessages.bind(this)
   }
@@ -51,6 +52,14 @@ class App extends Component {
      }
      return true
    }
+   componentWillUpdate(nextProps, nextState) {
+       this.setState({scrollPos: document.body.scrollHeight - document.body.clientHeight})
+   }
+
+   componentDidUpdate(prevProps, prevState){
+       if(document.documentElement.scrollTop >= this.state.scrollPos) {
+           window.scrollTo(0, document.body.scrollHeight)
+       }
 
    getMessages() {
      axios.get("http://unomni.com:3000/clusters/1/")
