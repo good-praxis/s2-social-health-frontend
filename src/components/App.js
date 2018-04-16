@@ -60,12 +60,11 @@ class App extends Component {
        if(document.documentElement.scrollTop >= this.state.scrollPos) {
            window.scrollTo(0, document.body.scrollHeight)
        }
+     }
 
    getMessages() {
      axios.get("http://unomni.com:3000/clusters/1/")
-     .then(response => this.setState({messages: response.data.messages}))
-     axios.get("http://unomni.com:3000/clusters/1/")
-     .then(response => this.setState({users: response.data.users}))
+     .then(response => this.setState({messages: response.data.messages, users: response.data.users}))
    }
 
 
