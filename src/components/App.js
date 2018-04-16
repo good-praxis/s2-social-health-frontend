@@ -71,8 +71,8 @@ class App extends Component {
 
 
    addMessage = (messagecontent)=> {
-     Store.post("messages", {message_content:messagecontent})
-     
+     //Store.post("messages", {message_content:messagecontent})
+     axios.post("http://unomni.com:3000/messages", {message_content:messagecontent})
 
 
    }

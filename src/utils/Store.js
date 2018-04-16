@@ -1,4 +1,5 @@
 import StorageAdaptor from './StorageAdaptor';
+import axios from "axios"
 
 var API_URL = "http://localhost:3000/";
 
@@ -30,12 +31,13 @@ function query(url,paramsObj){
     .then(parseJSON);
 }
 
-function post(url,obj){
-  var sendHeaders = {
-    'accept': 'application/json',
-    'Content-Type': 'application/json'
-  };
-  var completeHeaders=constructHeadersForRequest(sendHeaders);
+// function post(url,obj){
+//   //var sendHeaders = {
+//   //  'accept': 'application/json',
+//     //'Content-Type': 'application/json'
+//   //};
+//   axion.post(url, obj)
+//   //var completeHeaders=constructHeadersForRequest(sendHeaders);
 
   return fetch(API_URL+url,{
     headers: completeHeaders,
