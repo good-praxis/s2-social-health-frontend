@@ -39,7 +39,7 @@ function query(url,paramsObj){
   // axion.post(url, obj)
   //var completeHeaders=constructHeadersForRequest(sendHeaders);
   //
-  // return fetch(API_URL+url,{
+  // return fetch(API_UL+url,{
   //   headers: completeHeaders,
   //   method:"post",
   //   body:JSON.stringify(obj)
@@ -139,7 +139,6 @@ const AuthStore = {
   deauthenticate,
   get,
   query,
-  post,
   put,
   destroy,
   isAuthenticated,
