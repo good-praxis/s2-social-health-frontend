@@ -39,11 +39,13 @@ function post(url,obj){
 
   scrollDown()
 
-  return fetch(API_URL+url,{
-    headers: completeHeaders,
-    method:"post",
-    body:JSON.stringify(obj)
-  });
+  // return fetch(API_URL+url,{
+  //   headers: completeHeaders,
+  //   method:"post",
+  //   body:JSON.stringify(obj)
+  // });
+
+  return "Promise"
 }
 
 function put(url,obj){

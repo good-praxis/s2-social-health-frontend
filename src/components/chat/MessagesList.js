@@ -21,7 +21,7 @@ class MessagesList extends Component {
             </section>
         )
     }
-    componentWillMount() {
+    componentDidMount() {
       window.scrollTo(0, document.body.scrollHeight)
     }
 
@@ -34,9 +34,9 @@ class MessagesList extends Component {
     }
 
     componentDidUpdate(prevProps, prevState){
-        //if(document.documentElement.scrollTop >= this.state.scrollPos) {
-            //window.scrollTo(0, document.body.scrollHeight)
-        //}
+        if(document.documentElement.scrollTop >= this.state.scrollPos) {
+            window.scrollTo(0, document.body.scrollHeight)
+        }
 
     }
 }
