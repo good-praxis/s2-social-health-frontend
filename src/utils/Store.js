@@ -37,15 +37,12 @@ function post(url,obj){
   };
   var completeHeaders=constructHeadersForRequest(sendHeaders);
 
-  scrollDown()
+  return fetch(API_URL+url,{
+    headers: completeHeaders,
+    method:"post",
+    body:JSON.stringify(obj)
+  });
 
-  // return fetch(API_URL+url,{
-  //   headers: completeHeaders,
-  //   method:"post",
-  //   body:JSON.stringify(obj)
-  // });
-
-  return "Promise"
 }
 
 function put(url,obj){
