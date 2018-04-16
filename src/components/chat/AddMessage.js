@@ -7,12 +7,12 @@ class AddMessage extends React.Component{
 
 
     }
-    submit = () => {
+    submit = (e) => {
       if (this.state.messagecontent !== ""){
         this.props.onAddMessage(this.state.messagecontent)
         this.setState({messagecontent:""})
       }
-      return false
+      e.preventDefault()
     }
     // let input
     render(){
