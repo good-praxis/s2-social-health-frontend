@@ -9,7 +9,8 @@ function get(url){
   };
   var completeHeaders = constructHeadersForRequest(receiveHeaders);
 
-  return axios.(API_URL+url, {
+  return fetch(API_URL+url, {
+    headers:completeHeaders
   })
   .then(checkStatus)
   .then(parseJSON);
