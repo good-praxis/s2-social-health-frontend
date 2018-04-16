@@ -76,7 +76,7 @@ class App extends Component {
        this.setState({messages:newmessages})
      })
 
-
+     window.scrollTo(0, document.body.scrollHeight)
    }
     render() {
       let {messages,users} = this.state
