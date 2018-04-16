@@ -12,6 +12,7 @@ class AddMessage extends React.Component{
         this.props.onAddMessage(this.state.messagecontent)
         this.setState({messagecontent:""})
       }
+      return false
     }
     // let input
     render(){
