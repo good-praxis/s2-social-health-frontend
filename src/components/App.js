@@ -74,9 +74,9 @@ class App extends Component {
      Store.post("messages", {message_content:messagecontent}).then((createdMessage)=>{
        let newmessages = this.state.messages.concat([createdMessage])
        this.setState({messages:newmessages})
-     })
+     }
+   ).then(window.scrollTo(0, document.body.scrollHeight))
 
-     window.scrollTo(0, document.body.scrollHeight)
    }
     render() {
       let {messages,users} = this.state
