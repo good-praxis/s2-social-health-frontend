@@ -136,7 +136,8 @@ function constructQueryParams(params){
 }
 
 function scrollDown() {
-    window.scrollTo(0, document.body.scrollHeight)
+  console.log("Is it working again?")
+  window.scrollTo(0, document.body.scrollHeight)
   }
 const AuthStore = {
   deauthenticate,
