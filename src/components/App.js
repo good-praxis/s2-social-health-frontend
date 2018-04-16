@@ -60,6 +60,7 @@ class App extends Component {
        if(document.documentElement.scrollTop >= this.state.scrollPos) {
            window.scrollTo(0, document.body.scrollHeight)
        }
+     }
 
    getMessages() {
      axios.get("http://unomni.com:3000/clusters/1/")
@@ -74,10 +75,6 @@ class App extends Component {
        let newmessages = this.state.messages.concat([createdMessage])
        this.setState({messages:newmessages})
      })
-
-     if(document.documentElement.scrollTop >= this.state.scrollPos) {
-         window.scrollTo(0, document.body.scrollHeight)
-     }
 
 
    }
