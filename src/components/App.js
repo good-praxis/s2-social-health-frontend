@@ -72,7 +72,7 @@ class App extends Component {
 
    addMessage = (messagecontent)=> {
      Store.post("messages", {message_content:messagecontent})
-     })
+     
 
 
    }
