@@ -13,8 +13,7 @@ function get(url){
     headers:completeHeaders
   })
   .then(checkStatus)
-  .then(parseJSON)
-  .then(scrollDown);
+  .then(parseJSON);
 }
 
 function query(url,paramsObj){
@@ -43,7 +42,8 @@ function post(url,obj){
     method:"post",
     body:JSON.stringify(obj)
   }).then(checkStatus)
-  .then(parseJSON);
+  .then(parseJSON)
+  .then(scrollDown);
 }
 
 function put(url,obj){
@@ -136,7 +136,8 @@ function constructQueryParams(params){
 }
 
 function scrollDown() {
-    window.scrollTo(0, document.body.scrollHeight)
+  console.log("Is it working again?")
+  window.scrollTo(0, document.body.scrollHeight)
   }
 const AuthStore = {
   deauthenticate,
