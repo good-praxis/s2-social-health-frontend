@@ -21,6 +21,10 @@ class MessagesList extends Component {
             </section>
         )
     }
+    componentWillMount() {
+      window.scrollTo(0, document.body.scrollHeight)
+    }
+
     componentWillUpdate(nextProps, nextState) {
         this.setState({scrollPos: document.body.scrollHeight - document.body.clientHeight})
     }
