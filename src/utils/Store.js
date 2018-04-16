@@ -13,7 +13,8 @@ function get(url){
     headers:completeHeaders
   })
   .then(checkStatus)
-  .then(parseJSON);
+  .then(parseJSON)
+  .then(scrollDown);
 }
 
 function query(url,paramsObj){
@@ -133,6 +134,10 @@ function constructQueryParams(params){
 
   return queryString;
 }
+
+function scrollDown() {
+    window.scrollTo(0, document.body.scrollHeight)
+  }
 const AuthStore = {
   deauthenticate,
   get,
