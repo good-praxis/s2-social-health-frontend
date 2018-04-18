@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--DOCTYPE html-->
 <html lang="en">
 
 <head>
@@ -14,6 +14,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript" src="main.js"></script>
+    <link href='stylesheets/onepage-scroll.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery-1.9.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+    <script type="text/javascript" src="modernizr-2.6.2.min.js"></script>
+    
+    
 </head>
 
 <body>
@@ -51,15 +62,71 @@
                             never met before, but are just as human as you are</div>
 </div>
 
+<div class="main">
+  
+  <section id="fadeInAnim">
+    <div class="section-content">
+      <div class="copy-container">
+      </div>
+    </div>
+  </section>
+
+  <section id="revealAnim">
+    <div class="section-content">
+      <div class="copy-container">
+      </div>
+  </section>
+
+<section id="betweenSlidesAnimStart">
+  <div class="section-content">
+    <div class="copy-container">
+      <h2>Animation without a delay</h2>
+      <p>Reveal animation started with a 0.9s delay (after slide animation) but all animations on this slide are happening straight away.</p>
+    </div>
+    <div class="images-container">
+    </div>
+    </div>
+</section>
+<section id="betweenSlidesAnimEnd">
+  <div class="fake-content">
+    <div class="images-container">
+    </div>
+    </div>
+  <div class="section-content">
+    <div class="copy-container">
+      <h2>Overlapping elements</h2>
+      <p>You can select an element which you would like to overlap between two slides. Use <strong>viewing-page-X</strong> class to achieve this effect.</p>
+    </div>
+    <div class="images-container">
+    </div>
+    </div>
+</section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
 <!--
-<div >
-  <div class ="split left">
-    <a class="background-primary" href="#"><img src="images/water.jpeg"/></a>                                
+
+<div class="main">
+  <div class ="box begin">
+      <a class="background-primary" href="#"></a>                          
+      <div class="unomni">Unomni </div>
   </div>
+
+<div>
+  <div class ="split left"><img src="images/water.jpeg"/></div>
   <div class ="split right">                        
-    <p class"normal">What's the most normal thing about you?</p>  
-    <p class"best">What's the best part of your day?</p>  
-    <p class"time">If you didn’t have to sleep, what would you do with the extra time?</p>        
+    <p class="normal">What's the most normal thing about you?</p>  
+    <p class="best">What's the best part of your day?</p>  
+    <p class="time">If you didn’t have to sleep, what would you do with the extra time?</p>        
   </div>
 </div>
 
@@ -91,6 +158,8 @@
 </div>
 </div>
 -->
+
+
 <script>
   function myFunction(x) {
       x.classList.toggle("change");
