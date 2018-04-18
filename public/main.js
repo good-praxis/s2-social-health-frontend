@@ -25,6 +25,7 @@ function start() {
 	
 }
 
+
 $(window).load(function() {
 	
 	// fade in page
