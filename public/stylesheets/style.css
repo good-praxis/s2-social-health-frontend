@@ -81,9 +81,8 @@
   }
 
   .mindful {
-    padding: 200px 0 0 0;
-    margin-left: 20%;
-    height: 80%;
+    margin: 15% 0 0 25%; 
+    height: 60%;
     
   }
 
@@ -91,9 +90,22 @@
     width: 100%;
   }
 
+  .seven {
+    margin: 3% 0 0 17%; 
+  }
+
+  .ask {
+    width: 80%;   
+    margin: 3% 0 0 5%; 
+  }
+
   .level {
     width: 80%;   
     margin: 3% 0 0 10%; 
+  }
+
+  .centered {
+    margin: 20% 0 0 17%;
   }
 
 
