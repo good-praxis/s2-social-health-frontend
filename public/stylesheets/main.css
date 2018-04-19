@@ -109,15 +109,13 @@ body, html {
 	height: 100%;
 	min-height: 100%;
 }
-.loading {
-	background: url('../img/ico_loading.gif') no-repeat center center;
-}
+
 #demo-content {
 	
 }
 section {
 	min-width: 960px;
-	opacity: 0;
+	opacity: 1;
 	-webkit-transition:opacity .6s;
 	-webkit-transition-delay:.2s;
 	-moz-transition:opacity .6s;

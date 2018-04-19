@@ -26,9 +26,9 @@ function start() {
 }
 
 
-$(window).load(function() {
+//$(window).load(function() {
 	
 	// fade in page
-	init();
+	//init();
 	
-});
+//});
