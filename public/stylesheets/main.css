@@ -191,15 +191,12 @@ section p {
 		bottom: -230px;
 		margin-left: -530px;
 	}
-	.fadeIn {
-		
-	}
 
 /* Reveal animation - Slide 2 */
-#revealAnim .copy-container {
-	width: 320px;
-	margin-left: 60px;
-	margin-top: -130px;
+	#revealAnim .copy-container {
+		width: 320px;
+		margin-left: 60px;
+		margin-top: -130px;
 }
 	#revealAnim .images-container {
 		margin-top: -245px;
@@ -235,9 +232,7 @@ section p {
 	}
 
 /* Between Slides Animation - Slide 3-4 */
-#betweenSlidesAnimStart {
-	
-}
+
 	#betweenSlidesAnimStart .copy-container {
 		width: 430px;
 		margin-left: -40px;
