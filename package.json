@@ -22,7 +22,7 @@
     "bourbon": "^5.0.0",
     "chance": "^1.0.13",
     "npm": "^5.8.0",
-    "query-string": "^5.0.1",
+    "query-string": "^6.2.0",
     "react": "^16.2.0",
     "redux-saga": "^0.16.0",
     "ws": "^4.0.0"
