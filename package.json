@@ -40,6 +40,6 @@
     "redux": "^3.7.2",
     "webpack": "^2.7.0",
     "webpack-css-loaders": "^1.0.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^2.11.3"
   }
 }
